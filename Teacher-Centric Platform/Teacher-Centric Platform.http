@@ -1,0 +1,6 @@
+@Teacher_Centric_Platform_HostAddress = http://localhost:5021
+
+GET {{Teacher_Centric_Platform_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

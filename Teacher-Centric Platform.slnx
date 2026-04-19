@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Teacher-Centric Platform.Application/Teacher-Centric Platform.Application.csproj" />
+  <Project Path="Teacher-Centric Platform.Domain/Teacher-Centric Platform.Domain.csproj" />
+  <Project Path="Teacher-Centric Platform.Infrastructure/Teacher-Centric Platform.Infrastructure.csproj" />
+  <Project Path="Teacher-Centric Platform/Teacher-Centric Platform.Api.csproj" />
+</Solution>
