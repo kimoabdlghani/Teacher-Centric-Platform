@@ -24,6 +24,11 @@ namespace Teacher_Centric_Platform.Domain.Entities.Assignment
 
         public ICollection<AssignmentSubmission> Submissions { get; private set; } = new List<AssignmentSubmission>();
 
+        private Assignment()
+        {
+            
+        }
+
 
     }
 
