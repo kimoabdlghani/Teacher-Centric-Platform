@@ -28,7 +28,6 @@ namespace Teacher_Centric_Platform.Domain.Entities.QA
             AuthorId = authorId;
             Content = content;
             ParentPostId = parentPostId;
-            CreatedAt = DateTime.UtcNow;
         }
 
         public void Edit(string newContent)

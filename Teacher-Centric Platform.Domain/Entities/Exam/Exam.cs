@@ -29,5 +29,26 @@ namespace Teacher_Centric_Platform.Domain.Entities.Exam
         public ICollection<Question> Questions { get; private set; } = new List<Question>();
 
         public ICollection<ExamAttempt> Attempts { get; private set; } = new List<ExamAttempt>();
+
+        private Exam()
+        {
+            
+        }
+        public bool CanStart(DateTime now)
+        {
+            if (!IsPublished) return false;
+            if (StartDate.HasValue && now < StartDate) return false;
+            if (EndDate.HasValue && now > EndDate) return false;
+            return true;
+        }
+
+        public bool CanAttempt(int currentAttempts)
+            => currentAttempts < MaxAttempts;
+
+        public bool IsWithinDuration(DateTime startTime, DateTime now)
+            => (now - startTime).TotalMinutes <= DurationMinutes;
+
+        public bool IsPassed(decimal score)
+            => score >= PassingScore;
     }
 }

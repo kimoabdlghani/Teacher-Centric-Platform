@@ -3,6 +3,7 @@
     public enum SubmissionStatus
     {
         Submitted,
+        InProgress,
         Passed,
         Failed
     }

@@ -19,7 +19,7 @@ namespace Teacher_Centric_Platform.Domain.Entities.Exam
 
         private Question() { }
 
-        public Question(string text, QuestionType type, decimal maxScore, string correctAnswer, Guid assignmentId)
+        public Question(string text, QuestionType type, decimal maxScore, string correctAnswer, Guid? assignmentId,Guid? examId)
         {
             if (string.IsNullOrWhiteSpace(text))
                 throw new DomainException("Question text is required.");
@@ -32,6 +32,7 @@ namespace Teacher_Centric_Platform.Domain.Entities.Exam
             MaxScore = maxScore;
             CorrectAnswer = correctAnswer;
             AssignmentId = assignmentId;
+            ExamId = examId;
         }
 
     }
