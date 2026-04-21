@@ -1,4 +1,4 @@
-﻿namespace Teacher_Centric_Platform.Domain.Entities
+﻿namespace Teacher_Centric_Platform.Domain
 {
     public class DomainException : Exception
     {

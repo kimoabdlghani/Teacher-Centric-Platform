@@ -1,12 +1,16 @@
-﻿using Teacher_Centric_Platform.Domain.Enums;
+﻿using Teacher_Centric_Platform.Domain.Common;
+using Teacher_Centric_Platform.Domain.Enums;
 
-namespace Teacher_Centric_Platform.Domain.Entities
+namespace Teacher_Centric_Platform.Domain.Entities.Course
 {
     // Domain/Entities/Enrollment.cs
     public class Enrollment : BaseAuditableEntity
     {
         public Guid StudentId { get; private set; }
         public Guid CourseId { get; private set; }
+
+        public Course Course { get; private set; } = null!;
+        public DateTime EnrollmentDate { get; private set; } = DateTime.UtcNow;
         public EnrollmentStatus Status { get; private set; }
         public double ProgressPercentage { get; private set; }
 
