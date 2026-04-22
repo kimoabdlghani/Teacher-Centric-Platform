@@ -19,4 +19,9 @@
     <ProjectReference Include="..\Teacher-Centric Platform.Domain\Teacher-Centric Platform.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\" />
+    <Folder Include="Interfaces\Services\" />
+  </ItemGroup>
+
 </Project>

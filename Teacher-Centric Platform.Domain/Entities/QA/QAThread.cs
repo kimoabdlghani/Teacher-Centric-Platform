@@ -29,7 +29,6 @@ namespace Teacher_Centric_Platform.Domain.Entities.QA
             LessonId = lessonId;
             AuthorId = authorId;
             Title = title;
-            CreatedAt = DateTime.UtcNow;
         }
 
         // 👇 إضافة رد جديد
